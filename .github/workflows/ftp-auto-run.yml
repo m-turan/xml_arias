@@ -16,7 +16,7 @@ jobs:
       - name: Node.js ortamını kur
         uses: actions/setup-node@v4
         with:
-          node-version: '18'  # veya kullandığın başka sürüm
+          node-version: '17'  # veya kullandığın başka sürüm
 
       - name: Bağımlılıkları yükle
         run: npm install
