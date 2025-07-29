@@ -1,25 +1,26 @@
-name: Run Node Script Every 6 Hours
+name: XML Converter Cron Job
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Her 6 saatte bir çalışır
-  workflow_dispatch:
+    # Her 5 dakikada bir çalışır
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Manuel çalıştırma için
 
 jobs:
-  run-node:
+  convert-and-upload:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Reposu klonla
-        uses: actions/checkout@v4
-
-      - name: Node.js ortamını kur
-        uses: actions/setup-node@v4
-        with:
-          node-version: '17'  # veya kullandığın başka sürüm
-
-      - name: Bağımlılıkları yükle
-        run: npm install
-
-      - name: Scripti çalıştır
-        run: node batchConvert.js
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Scripti çalıştır
+      run: node batchConvert.js
