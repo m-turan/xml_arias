@@ -1,0 +1,14 @@
+{
+    "name": "xml-batch-converter",
+    "version": "1.0.0",
+    "main": "batchConvert.js",
+    "type": "commonjs",
+    "scripts": {
+      "start": "node batchConvert.js"
+    },
+    "dependencies": {
+      "axios": "^1.6.7",
+      "xml2js": "^0.4.23",
+      "basic-ftp": "^5.0.5"
+    }
+  }
