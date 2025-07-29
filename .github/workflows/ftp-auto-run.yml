@@ -1,0 +1,25 @@
+name: Run Node Script Every 6 Hours
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Her 6 saatte bir çalışır
+  workflow_dispatch:
+
+jobs:
+  run-node:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Reposu klonla
+        uses: actions/checkout@v4
+
+      - name: Node.js ortamını kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'  # veya kullandığın başka sürüm
+
+      - name: Bağımlılıkları yükle
+        run: npm install
+
+      - name: Scripti çalıştır
+        run: node batchConvert.js
