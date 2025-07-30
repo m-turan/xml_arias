@@ -2,8 +2,8 @@ name: XML Converter Cron Job
 
 on:
   schedule:
-    # Her 5 dakikada bir çalışır
-    - cron: '*/5 * * * *'
+    
+    - cron: '0 */6 * * *'
   workflow_dispatch: # Manuel çalıştırma için
 
 jobs:
