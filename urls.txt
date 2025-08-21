@@ -4,3 +4,5 @@ https://www.yeninesiltoptanci.com/TicimaxXml/7B4B25E2DF9044FC9CBDCB49FDA5F2C2/  
 https://www.nightlight.com.tr/TicimaxXml/ACA7D40B4CDE43CFAEDAFE7DFC56D453/      nightdeneme.xml
 https://www.bayanicgiyim.com/TicimaxCustomXml/7848E6A17DF247CA82502A496F883C26/ bayanbayandeneme.xml
 http://www.bayanicgiyim.com/TicimaxCustomXml/F71B059327E34DD4BC45E37187ABB781/  bayanerkek.xml
+https://aniicgiyim.com/TicimaxXmlV2/3CC46DC8F3EF4E95B4140D094A0D2C06/ ani.xml
+
